@@ -11,7 +11,7 @@ export async function Test_IsTervisItemPersonalizable({
     }
 
     let $PersonalizableItems = await fetch(
-        `https://unpkg.com/@tervis/TervisPersonalizableItems/TervisPersonalizableItems.json`
+        `https://unpkg.com/@tervis/tervispersonalizableitemsjs/TervisPersonalizableItems.json`
     ).then($Response => $Response.json())
 
     return $PersonalizableItems.includes($ItemNumber.toString())
