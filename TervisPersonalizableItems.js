@@ -1,5 +1,7 @@
 const $IsBrowser = !(typeof window === 'undefined');
 
+export var $PersonalizableItems
+
 export async function Test_IsTervisItemPersonalizable({
     $ItemNumber
 }) {
@@ -10,9 +12,11 @@ export async function Test_IsTervisItemPersonalizable({
         var fetch = window.fetch
     }
 
-    let $PersonalizableItems = await fetch(
-        `https://unpkg.com/@tervis/tervispersonalizableitemsjs/TervisPersonalizableItems.json`
-    ).then($Response => $Response.json())
+    if (!$PersonalizableItems) {
+        $PersonalizableItems = await fetch(
+            `https://unpkg.com/@tervis/tervispersonalizableitemsjs/TervisPersonalizableItems.json`
+        ).then($Response => $Response.json())
+    }
 
     return $PersonalizableItems.includes($ItemNumber.toString())
 }
