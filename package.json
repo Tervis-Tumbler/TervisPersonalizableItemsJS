@@ -2,21 +2,12 @@
   "name": "@tervis/tervispersonalizableitemsjs",
   "version": "1.0.2",
   "description": "Tervis personalizable items",
+  "type": "module",
   "main": "TervisPersonalizableItems.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tervis-Tumbler/TervisPersonalizableItemsJS.git"
   },
-  "keywords": [
-    "tervis"
-  ],
   "author": "Hamilton Perez",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Tervis-Tumbler/TervisPersonalizableItemsJS/issues"
-  },
-  "homepage": "https://github.com/Tervis-Tumbler/TervisPersonalizableItemsJS#readme"
+  "license": "MIT"
 }
