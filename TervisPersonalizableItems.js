@@ -1,6 +1,6 @@
 const $IsBrowser = !(typeof window === 'undefined');
 
-export var $PersonalizableItems
+let $PersonalizableItems
 
 export async function Test_IsTervisItemPersonalizable({
     $ItemNumber
