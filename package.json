@@ -1,6 +1,6 @@
 {
   "name": "@tervis/tervispersonalizableitemsjs",
-  "version": "1.0.89",
+  "version": "1.0.90",
   "description": "Tervis personalizable items",
   "type": "module",
   "main": "TervisPersonalizableItems.js",
