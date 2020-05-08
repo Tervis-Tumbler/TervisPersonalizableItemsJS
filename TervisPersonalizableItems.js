@@ -16,7 +16,7 @@ export async function Test_IsTervisItemPersonalizable({
     
     if (!$PersonalizableItems) {
         $PersonalizableItems = await fetch(
-            `https://unpkg.com/@tervis/tervispersonalizableitemsjs/TervisPersonalizableItems.json`
+            `https://tervislrstorage.blob.core.windows.net/tervisshopify/PersonalizableItems_Production.json`
         ).then($Response => $Response.json())
     }
 
